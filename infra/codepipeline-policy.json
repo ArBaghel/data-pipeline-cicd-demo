@@ -1,0 +1,59 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": [
+        "s3:GetObject",
+        "s3:GetObjectVersion",
+        "s3:PutObject",
+        "s3:GetBucketLocation",
+        "s3:ListBucket"
+      ],
+      "Resource": [
+        "arn:aws:s3:::data-pipeline-artifacts-667198667792",
+        "arn:aws:s3:::data-pipeline-artifacts-667198667792/*"
+      ]
+    },
+    {
+      "Effect": "Allow",
+      "Action": [
+        "codebuild:BatchGetBuilds",
+        "codebuild:StartBuild"
+      ],
+      "Resource": "arn:aws:codebuild:eu-north-1:667198667792:project/etl-customer-build"
+    },
+    {
+      "Effect": "Allow",
+      "Action": "codestar-connections:UseConnection",
+      "Resource": "arn:aws:codeconnections:eu-north-1:667198667792:connection/21d3a5b8-fe98-41e1-9ac7-4a430fcbdfdb"
+    },
+    {
+      "Effect": "Allow",
+      "Action": [
+        "lambda:UpdateFunctionCode",
+        "lambda:PublishVersion",
+        "lambda:UpdateAlias",
+        "lambda:GetFunction",
+        "lambda:GetAlias",
+        "lambda:GetFunctionConfiguration"
+      ],
+      "Resource": [
+        "arn:aws:lambda:eu-north-1:667198667792:function:etl-customer-lambda",
+        "arn:aws:lambda:eu-north-1:667198667792:function:etl-customer-lambda:*"
+      ]
+    },
+    {
+      "Effect": "Allow",
+      "Action": [
+        "logs:CreateLogGroup",
+        "logs:CreateLogStream",
+        "logs:PutLogEvents"
+      ],
+      "Resource": [
+        "arn:aws:logs:eu-north-1:667198667792:log-group:/aws/codepipeline/data-pipeline-etl-cd",
+        "arn:aws:logs:eu-north-1:667198667792:log-group:/aws/codepipeline/data-pipeline-etl-cd:log-stream:*"
+      ]
+    }
+  ]
+}
