@@ -9,7 +9,7 @@ from transform import row_to_item
 
 S3_BUCKET = os.environ.get("S3_BUCKET", "testingrawdata1")
 S3_KEY = os.environ.get("S3_KEY", "data-etl-test1/customer.csv")
-DYNAMODB_TABLE = os.environ.get("DYNAMODB_TABLE", "etl-test")
+DYNAMODB_TABLE = os.environ.get("DYNAMODB_TABLE", "etl-customer-table")
 
 
 def lambda_handler(event, context):
