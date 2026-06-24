@@ -2,10 +2,10 @@
 {
   "pipeline": {
     "name": "data-pipeline-etl-cd",
-    "roleArn": "arn:aws:iam::667198667792:role/data-pipeline-codepipeline-role",
+    "roleArn": "arn:aws:iam::603433800200:role/data-pipeline-codepipeline-role",
     "artifactStore": {
       "type": "S3",
-      "location": "data-pipeline-artifacts-667198667792"
+      "location": "cicd-artifacts-603433800200-ap-south-1"
     },
     "stages": [
       {
@@ -21,8 +21,8 @@
             },
             "runOrder": 1,
             "configuration": {
-              "ConnectionArn": "arn:aws:codeconnections:eu-north-1:667198667792:connection/21d3a5b8-fe98-41e1-9ac7-4a430fcbdfdb",
-              "FullRepositoryId": "Mandeepkumarsaw/data-pipeline-cicd-demo",
+              "ConnectionArn": "arn:aws:codeconnections:ap-south-1:603433800200:connection/21d3a5b8-fe98-41e1-9ac7-4a430fcbdfdb",
+              "FullRepositoryId": "ArBaghel/data-pipeline-cicd-demo",
               "BranchName": "main",
               "OutputArtifactFormat": "CODE_ZIP"
             },
@@ -75,7 +75,7 @@
             },
             "runOrder": 1,
             "configuration": {
-              "FunctionName": "etl-customer-lambda"
+              "FunctionName": "etl-customer-s3-to-dynamodb"
             },
             "inputArtifacts": [
               {
@@ -89,4 +89,3 @@
     "version": 1
   }
 }
-

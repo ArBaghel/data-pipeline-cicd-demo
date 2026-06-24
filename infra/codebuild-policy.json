@@ -18,8 +18,9 @@
         "s3:PutObject"
       ],
       "Resource": [
-        "arn:aws:s3:::__ARTIFACT_BUCKET__",
-        "arn:aws:s3:::__ARTIFACT_BUCKET__/*"
+        "arn:aws:s3:::cicd-artifacts-603433800200-ap-south-1",
+        "arn:aws:s3:::cicd-artifacts-603433800200-ap-south-1/*"
+
       ]
     }
   ]

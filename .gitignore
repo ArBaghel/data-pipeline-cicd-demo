@@ -4,3 +4,4 @@ __pycache__/
 function.zip
 infra/rendered/
 .env
+.vscode/
