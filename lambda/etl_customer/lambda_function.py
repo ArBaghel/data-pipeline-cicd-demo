@@ -6,6 +6,7 @@ import os
 import boto3
 
 from transform import row_to_item
+#add the s3 bucket and key as environment variables for testing purposes
 
 S3_BUCKET = os.environ.get("S3_BUCKET", "testingrawdata1")
 S3_KEY = os.environ.get("S3_KEY", "data-etl-test1/customer.csv")
