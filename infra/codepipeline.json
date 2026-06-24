@@ -21,7 +21,7 @@
             },
             "runOrder": 1,
             "configuration": {
-              "ConnectionArn": "arn:aws:codeconnections:ap-south-1:603433800200:connection/21d3a5b8-fe98-41e1-9ac7-4a430fcbdfdb",
+              "ConnectionArn": "arn:aws:codeconnections:ap-south-1:603433800200:connection/dcfa3a2a-759f-489d-b868-1b6e80a16212",
               "FullRepositoryId": "ArBaghel/data-pipeline-cicd-demo",
               "BranchName": "main",
               "OutputArtifactFormat": "CODE_ZIP"
