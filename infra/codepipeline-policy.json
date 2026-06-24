@@ -26,7 +26,7 @@
     {
       "Effect": "Allow",
       "Action": "codestar-connections:UseConnection",
-      "Resource": "arn:aws:codeconnections:ap-south-1:603433800200:connection/21d3a5b8-fe98-41e1-9ac7-4a430fcbdfdb"
+      "Resource": "arn:aws:codeconnections:ap-south-1:603433800200:connection/dcfa3a2a-759f-489d-b868-1b6e80a16212"
     },
     {
       "Effect": "Allow",
