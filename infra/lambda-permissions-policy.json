@@ -9,8 +9,8 @@
         "s3:ListBucket"
       ],
       "Resource": [
-        "arn:aws:s3:::testingrawdata-603433800200-ap-south-1",
-        "arn:aws:s3:::testingrawdata-603433800200-ap-south-1/*"
+        "arn:aws:s3:::testingrawdata1",
+        "arn:aws:s3:::testingrawdata1/*"
       ]
     },
     {
@@ -21,7 +21,7 @@
         "dynamodb:BatchWriteItem",
         "dynamodb:DescribeTable"
       ],
-      "Resource": "arn:aws:dynamodb:ap-south-1:603433800200:table/etl-test"
+      "Resource": "arn:aws:dynamodb:ap-south-1:603433800200:table/etl-customer-table"
     },
     {
       "Sid": "LambdaBasicExecution",
